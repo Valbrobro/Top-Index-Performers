@@ -494,43 +494,7 @@
         
 
         marker_1315c04f3c568079bbd0157cc6b6b592.bindPopup(popup_cbeaf159d67397ebe7d00d5d7a80e798)
-        ;
-
-   // Fonction pour actualiser les éléments visibles sur la carte
-function actualiserElementsVisibles() {
-    // Récupérer la position actuelle de la carte
-    var positionCarte = {
-        x: /* code pour récupérer la position horizontale de la carte */,
-        y: /* code pour récupérer la position verticale de la carte */
-    };
-
-    // Parcourir tous les éléments de la carte
-    var elementsCarte = document.querySelectorAll('.element-carte');
-    elementsCarte.forEach(function(element) {
-        // Récupérer la position de l'élément sur la carte
-        var positionElement = {
-            x: /* code pour récupérer la position horizontale de l'élément */,
-            y: /* code pour récupérer la position verticale de l'élément */
-        };
-
-        // Calculer la position relative de l'élément par rapport à la carte
-        var positionRelative = {
-            x: positionElement.x - positionCarte.x,
-            y: positionElement.y - positionCarte.y
-        };
-
-        // Mettre à jour la position de l'élément sur la page
-        element.style.left = positionRelative.x + 'px';
-        element.style.top = positionRelative.y + 'px';
-    });
-}
-
-// Gérer les événements de défilement de la carte
-var carte = document.getElementById('carte');
-carte.addEventListener('scroll', actualiserElementsVisibles);
-
-// Appel initial pour actualiser les éléments visibles au chargement de la page
-actualiserElementsVisibles();     
+        ;   
     
 </script>
 </html>
