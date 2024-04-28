@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_951007d7d11a6abe4ab20559e92de8ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_951007d7d11a6abe4ab20559e92de8ba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_951007d7d11a6abe4ab20559e92de8ba = L.map(
+                "map_951007d7d11a6abe4ab20559e92de8ba",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d36c534bcfc08f4f487633093adfb19f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d36c534bcfc08f4f487633093adfb19f.addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var marker_f2a78760d5fe21c6c430d3e2137e82d4 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_51b784604ed44a7582fc856651d1ef6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2a78760d5fe21c6c430d3e2137e82d4.setIcon(icon_51b784604ed44a7582fc856651d1ef6d);
+        
+    
+        var popup_a7e6231c6b500eee80d8043a633d3074 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d733dcf6894b3af48c4a0a661e46f062 = $(`<div id="html_d733dcf6894b3af48c4a0a661e46f062" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>USA</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>S&P 500</td><td>0.30%</td></tr></table></div></div>`)[0];
+                popup_a7e6231c6b500eee80d8043a633d3074.setContent(html_d733dcf6894b3af48c4a0a661e46f062);
+            
+        
+
+        marker_f2a78760d5fe21c6c430d3e2137e82d4.bindPopup(popup_a7e6231c6b500eee80d8043a633d3074)
+        ;
+
+        
+    
+    
+            var marker_b86bd7122626738e4930a86fe05a0b27 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_a6fbd7084cba4b3bf28b2a21b64d1981 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b86bd7122626738e4930a86fe05a0b27.setIcon(icon_a6fbd7084cba4b3bf28b2a21b64d1981);
+        
+    
+        var popup_4bb201cdf5c69847bbd3ec29336e463e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcf07b18f7a1249962ba19676c735d79 = $(`<div id="html_bcf07b18f7a1249962ba19676c735d79" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>France</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>CAC 40</td><td>0.20%</td></tr></table></div></div>`)[0];
+                popup_4bb201cdf5c69847bbd3ec29336e463e.setContent(html_bcf07b18f7a1249962ba19676c735d79);
+            
+        
+
+        marker_b86bd7122626738e4930a86fe05a0b27.bindPopup(popup_4bb201cdf5c69847bbd3ec29336e463e)
+        ;
+
+        
+    
+    
+            var marker_c4d992486873d7c5dfd8ff235a8c7aaf = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_5c44012b0796e39b59cdfcc9e0ac0e51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c4d992486873d7c5dfd8ff235a8c7aaf.setIcon(icon_5c44012b0796e39b59cdfcc9e0ac0e51);
+        
+    
+        var popup_21467d08c61da6a991a6c7a93ab120b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62515cb7b5d241445f2f5ebf338de1fa = $(`<div id="html_62515cb7b5d241445f2f5ebf338de1fa" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Japan</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>NIKKEI 225</td><td>0.55%</td></tr></table></div></div>`)[0];
+                popup_21467d08c61da6a991a6c7a93ab120b8.setContent(html_62515cb7b5d241445f2f5ebf338de1fa);
+            
+        
+
+        marker_c4d992486873d7c5dfd8ff235a8c7aaf.bindPopup(popup_21467d08c61da6a991a6c7a93ab120b8)
+        ;
+
+        
+    
+    
+            var marker_0a95f712e5242e3e33cca3b1147b626d = L.marker(
+                [52.52, 13.405],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_c27d383ee01c3dc0366541a5eb6d727d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0a95f712e5242e3e33cca3b1147b626d.setIcon(icon_c27d383ee01c3dc0366541a5eb6d727d);
+        
+    
+        var popup_ac2f80add0578499374c26c664ae09b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc2a921a7e623ba5b3965fdf782f6350 = $(`<div id="html_fc2a921a7e623ba5b3965fdf782f6350" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Germany</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>DAX 30</td><td>1.32%</td></tr></table></div></div>`)[0];
+                popup_ac2f80add0578499374c26c664ae09b5.setContent(html_fc2a921a7e623ba5b3965fdf782f6350);
+            
+        
+
+        marker_0a95f712e5242e3e33cca3b1147b626d.bindPopup(popup_ac2f80add0578499374c26c664ae09b5)
+        ;
+
+        
+    
+    
+            var marker_2e7b50025630f1a01bb32a335651528e = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_7d97c7d03a81d9868bee3332e2318837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2e7b50025630f1a01bb32a335651528e.setIcon(icon_7d97c7d03a81d9868bee3332e2318837);
+        
+    
+        var popup_b2e1d38b6ba2763620e4d516f4635252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9217fbb47bfb4949a52c4dea95a60d91 = $(`<div id="html_9217fbb47bfb4949a52c4dea95a60d91" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>UK</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>FTSE 100</td><td>0.75%</td></tr></table></div></div>`)[0];
+                popup_b2e1d38b6ba2763620e4d516f4635252.setContent(html_9217fbb47bfb4949a52c4dea95a60d91);
+            
+        
+
+        marker_2e7b50025630f1a01bb32a335651528e.bindPopup(popup_b2e1d38b6ba2763620e4d516f4635252)
+        ;
+
+        
+    
+    
+            var marker_89bdddea2dbffc07735e524ee806fbad = L.marker(
+                [28.6139, 77.209],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_dc57e352fa1932c6fc68cd1f3de2f5af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89bdddea2dbffc07735e524ee806fbad.setIcon(icon_dc57e352fa1932c6fc68cd1f3de2f5af);
+        
+    
+        var popup_eb68933c367804f61c1987d17fa4d643 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72db51b14bebb565b6d133768d759558 = $(`<div id="html_72db51b14bebb565b6d133768d759558" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>India</h3><br><h4>Investors must remain on guard</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>BSE SENSEX</td><td>-1.06%</td></tr></table></div></div>`)[0];
+                popup_eb68933c367804f61c1987d17fa4d643.setContent(html_72db51b14bebb565b6d133768d759558);
+            
+        
+
+        marker_89bdddea2dbffc07735e524ee806fbad.bindPopup(popup_eb68933c367804f61c1987d17fa4d643)
+        ;
+
+        
+    
+    
+            var marker_8d34c91930a6113808f53ba094af6469 = L.marker(
+                [37.5665, 126.978],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_87b24947a67eea1f5b6af4eef3f198d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8d34c91930a6113808f53ba094af6469.setIcon(icon_87b24947a67eea1f5b6af4eef3f198d6);
+        
+    
+        var popup_450fda942901584718b7b801d1fceeca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f95c69149aabe40d777bfe1575456fd = $(`<div id="html_0f95c69149aabe40d777bfe1575456fd" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>South Korea</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>KOSPI</td><td>0.20%</td></tr></table></div></div>`)[0];
+                popup_450fda942901584718b7b801d1fceeca.setContent(html_0f95c69149aabe40d777bfe1575456fd);
+            
+        
+
+        marker_8d34c91930a6113808f53ba094af6469.bindPopup(popup_450fda942901584718b7b801d1fceeca)
+        ;
+
+        
+    
+    
+            var marker_0e303e18367aace92c1a39c5fb2bed3d = L.marker(
+                [-15.7942, -47.8825],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_b6a52822d74ed53d4cb90faf9f108d5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0e303e18367aace92c1a39c5fb2bed3d.setIcon(icon_b6a52822d74ed53d4cb90faf9f108d5c);
+        
+    
+        var popup_3a814c84d401ff3b04addfec6aeb03a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d613dbbedcb492be665dfd438f6034bc = $(`<div id="html_d613dbbedcb492be665dfd438f6034bc" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Brazil</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>Bovespa</td><td>1.48%</td></tr></table></div></div>`)[0];
+                popup_3a814c84d401ff3b04addfec6aeb03a4.setContent(html_d613dbbedcb492be665dfd438f6034bc);
+            
+        
+
+        marker_0e303e18367aace92c1a39c5fb2bed3d.bindPopup(popup_3a814c84d401ff3b04addfec6aeb03a4)
+        ;
+
+        
+    
+    
+            var marker_071dab67ae0d9780f0066ab2f0378309 = L.marker(
+                [-35.3081, 149.1244],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_e70d079bbc9e8637cc362241b117ca1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_071dab67ae0d9780f0066ab2f0378309.setIcon(icon_e70d079bbc9e8637cc362241b117ca1c);
+        
+    
+        var popup_c375f549c22c090c23db4b6688057d4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0ec591815c6292db49cd124cf9091d1 = $(`<div id="html_f0ec591815c6292db49cd124cf9091d1" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Australia</h3><br><h4>Investors must remain on guard</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>All Ordinaries</td><td>-1.28%</td></tr></table></div></div>`)[0];
+                popup_c375f549c22c090c23db4b6688057d4a.setContent(html_f0ec591815c6292db49cd124cf9091d1);
+            
+        
+
+        marker_071dab67ae0d9780f0066ab2f0378309.bindPopup(popup_c375f549c22c090c23db4b6688057d4a)
+        ;
+
+        
+    
+    
+            var marker_fb0aa0da79777c6c6e8eaa0f5cc463d8 = L.marker(
+                [19.4326, -99.1332],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_f76df318228989272e65b1143d2aac05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fb0aa0da79777c6c6e8eaa0f5cc463d8.setIcon(icon_f76df318228989272e65b1143d2aac05);
+        
+    
+        var popup_137ca5cfb39e8115cc8c1817fb19c3c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8db4622b33407ed143774090aea0258 = $(`<div id="html_a8db4622b33407ed143774090aea0258" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Mexico</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>IPC</td><td>1.32%</td></tr></table></div></div>`)[0];
+                popup_137ca5cfb39e8115cc8c1817fb19c3c0.setContent(html_a8db4622b33407ed143774090aea0258);
+            
+        
+
+        marker_fb0aa0da79777c6c6e8eaa0f5cc463d8.bindPopup(popup_137ca5cfb39e8115cc8c1817fb19c3c0)
+        ;
+
+        
+    
+    
+            var marker_55a1472e0986c6d92c3106214e954680 = L.marker(
+                [28.6139, 77.209],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_4895a9c044db446877baf83599951190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55a1472e0986c6d92c3106214e954680.setIcon(icon_4895a9c044db446877baf83599951190);
+        
+    
+        var popup_ce02cfe14a3644527a5f65d6a92a75f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe8a045233f1164972d5a7350abac7c4 = $(`<div id="html_fe8a045233f1164972d5a7350abac7c4" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>India</h3><br><h4>Investors must remain on guard</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>NIFTY 50</td><td>-0.89%</td></tr></table></div></div>`)[0];
+                popup_ce02cfe14a3644527a5f65d6a92a75f8.setContent(html_fe8a045233f1164972d5a7350abac7c4);
+            
+        
+
+        marker_55a1472e0986c6d92c3106214e954680.bindPopup(popup_ce02cfe14a3644527a5f65d6a92a75f8)
+        ;
+
+        
+    
+    
+            var marker_60006074ce880d4831605203f98d1d63 = L.marker(
+                [-6.2088, 106.8456],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_0739277e5b33a214bfa4f0b5fdc26941 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_60006074ce880d4831605203f98d1d63.setIcon(icon_0739277e5b33a214bfa4f0b5fdc26941);
+        
+    
+        var popup_b8be314233b599fba0e6513902acb66b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4488d4ffd6aa197fe61092b183941d28 = $(`<div id="html_4488d4ffd6aa197fe61092b183941d28" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Indonesia</h3><br><h4>Investors must remain on guard</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>IDX Composite</td><td>-1.45%</td></tr></table></div></div>`)[0];
+                popup_b8be314233b599fba0e6513902acb66b.setContent(html_4488d4ffd6aa197fe61092b183941d28);
+            
+        
+
+        marker_60006074ce880d4831605203f98d1d63.bindPopup(popup_b8be314233b599fba0e6513902acb66b)
+        ;
+
+        
+    
+    
+            var marker_e825986c681dd858c91ea2a2c96a0b76 = L.marker(
+                [59.3293, 18.0686],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_9c4701db6c97ec1c5b3a58c6a8a77f13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e825986c681dd858c91ea2a2c96a0b76.setIcon(icon_9c4701db6c97ec1c5b3a58c6a8a77f13);
+        
+    
+        var popup_aa9d69d146938bed0d382cb1acacb1f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_000a4e3f6d25a7ab373b92a3ef3de211 = $(`<div id="html_000a4e3f6d25a7ab373b92a3ef3de211" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Sweden</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>OMX Stockholm 30</td><td>0.84%</td></tr></table></div></div>`)[0];
+                popup_aa9d69d146938bed0d382cb1acacb1f6.setContent(html_000a4e3f6d25a7ab373b92a3ef3de211);
+            
+        
+
+        marker_e825986c681dd858c91ea2a2c96a0b76.bindPopup(popup_aa9d69d146938bed0d382cb1acacb1f6)
+        ;
+
+        
+    
+    
+            var marker_4fa47570bc2a5e5b380dcbbbc782f556 = L.marker(
+                [32.0853, 34.7818],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_6d451468d481cc6a8f59f03b8de45748 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fa47570bc2a5e5b380dcbbbc782f556.setIcon(icon_6d451468d481cc6a8f59f03b8de45748);
+        
+    
+        var popup_667c68f2783bb683b8d710912cfc6a54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e51fa0dec2b2043abecde4acfc6a47df = $(`<div id="html_e51fa0dec2b2043abecde4acfc6a47df" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Israel</h3><br><h4>Investors must remain on guard</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>TA-125</td><td>-0.53%</td></tr></table></div></div>`)[0];
+                popup_667c68f2783bb683b8d710912cfc6a54.setContent(html_e51fa0dec2b2043abecde4acfc6a47df);
+            
+        
+
+        marker_4fa47570bc2a5e5b380dcbbbc782f556.bindPopup(popup_667c68f2783bb683b8d710912cfc6a54)
+        ;
+
+        
+    
+    
+            var marker_e7669fc9a93ecb340bdb115ceb6af471 = L.marker(
+                [22.3193, 114.1694],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var icon_9424688bbc06751d4da0d25f4f1c67a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e7669fc9a93ecb340bdb115ceb6af471.setIcon(icon_9424688bbc06751d4da0d25f4f1c67a9);
+        
+    
+        var popup_e4dfa8809dfe22688d0c7d1b66100cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09671b90839a358d601b53d25ba97110 = $(`<div id="html_09671b90839a358d601b53d25ba97110" style="width: 100.0%; height: 100.0%;"><div style="width:220px; height:170px; overflow:auto;"><h3>Hong Kong</h3><br><h4>Beautiful day for the investors</h4><table style="width:100%; text-align:left;"><tr><th>Name of the index</th><th>Return (%)</th></tr><tr><td>Hang Seng</td><td>1.78%</td></tr></table></div></div>`)[0];
+                popup_e4dfa8809dfe22688d0c7d1b66100cfc.setContent(html_09671b90839a358d601b53d25ba97110);
+            
+        
+
+        marker_e7669fc9a93ecb340bdb115ceb6af471.bindPopup(popup_e4dfa8809dfe22688d0c7d1b66100cfc)
+        ;
+
+        
+    
+    
+            var marker_1315c04f3c568079bbd0157cc6b6b592 = L.marker(
+                [10.0, -170.0],
+                {}
+            ).addTo(map_951007d7d11a6abe4ab20559e92de8ba);
+        
+    
+            var div_icon_e9b9e11873da0f0c8b9a300ade7ef300 = L.divIcon({"className": "empty", "html": "\u003ch3 style=\"color:black;\"\u003eTop Performers\u003c/h3\u003e", "iconAnchor": [0, 0]});
+            marker_1315c04f3c568079bbd0157cc6b6b592.setIcon(div_icon_e9b9e11873da0f0c8b9a300ade7ef300);
+        
+    
+        var popup_cbeaf159d67397ebe7d00d5d7a80e798 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb7b82cd8279b64e33568d0d72223cb9 = $(`<div id="html_cb7b82cd8279b64e33568d0d72223cb9" style="width: 100.0%; height: 100.0%;"><h3 style="background-color:white; padding:10px;">Top 10 Performers</h3><ol><li>Hang Seng (1.78%)</li><li>Bovespa (1.48%)</li><li>DAX 30 (1.32%)</li><li>IPC (1.32%)</li><li>OMX Stockholm 30 (0.84%)</li><li>FTSE 100 (0.75%)</li><li>NIKKEI 225 (0.55%)</li><li>S&P 500 (0.30%)</li><li>KOSPI (0.20%)</li><li>CAC 40 (0.20%)</li></ol></div>`)[0];
+                popup_cbeaf159d67397ebe7d00d5d7a80e798.setContent(html_cb7b82cd8279b64e33568d0d72223cb9);
+            
+        
+
+        marker_1315c04f3c568079bbd0157cc6b6b592.bindPopup(popup_cbeaf159d67397ebe7d00d5d7a80e798)
+        ;
+
+        
+    
+</script>
+</html>
